@@ -1,0 +1,16 @@
+<template>
+
+
+<lightning-card>
+  <lightning-input type="number" label="Enter Percentage" onkeyup={eventHandler} value={progress}></lightning-input>
+
+   <c-child-on-event-change
+   progress-value={progress}
+    is-valid
+     >
+   </c-child-on-event-change>
+
+</lightning-card>
+ 
+
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-carousel>
+        <template for:each={carosalTest} for:item="item">
+            <lightning-carousel-image
+                key={item.header}
+                src={item.src}
+                header={item.header}
+                description={item.description}>
+            </lightning-carousel-image>
+        </template>
+    </lightning-carousel>
+</template>

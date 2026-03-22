@@ -2,6 +2,7 @@ import { LightningElement,api } from 'lwc';
 
 export default class ParentCompo extends LightningElement {
      progress=10
+    
    
     CarosalDetails=[
         { 
@@ -24,5 +25,9 @@ export default class ParentCompo extends LightningElement {
     eventHandler(event){
      this.progress=event.target.value
     }
+   
+handleClick(){
+    this.template.querySelector('c-calling-child-method-from-parent').resetslider();
+}
 
 }
